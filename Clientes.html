@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset="UTF-8">
+	  <title>Formulario de Inscrição</title>
+	  <link rel="stylesheet" type="text/css" href="style.css" />
+	  <script language="JavaScript" type="text/javascript" src="cidades-estados-utf8.js"></script>
+	</head>
+
+	<body>
+	  
+	
+	     <h1>Academia TOP LIFE</h1>
+	     	 <h2> 
+	   <ul>
+	      <li><a href="Instrutores.html">Instrutores</a></li>
+	      <li><a href="Clientes.html">Clientes</a></li>
+	         <li><a href="Treinos.html">Treinos</a></li>
+     	  <li><a href="Dietas.html">Dietas</a></li>
+	   </ul>
+
+	 </h2>
+	 <br />
+	 <br />
+	 <br />
+	     <h2>Formulario de Inscrição</h2>
+
+
+	 <form action="" name="frmCadastro" method="post">
+			<fieldset>
+				<legend>Dados Pessoais</legend>
+				<label>Nome:<span>Somente 1º nome</span><input type="text" /></label>
+				<label>Sobrenome:<span>Sobrenome completo</span><input type="text" /></label>
+				<label>Bairro:<input type="text" /></label>
+				<label class="mInput">Rua:<span>Av, rua, lougradoro, etc.</span><input type="text" class="mInput" /></label>
+				<label>Complemento:<span>Casa, conjunto, bloco.</span><input type="text" /></label>
+				<label>Número:<input type="text" class="pInput" /></label>
+				<select id="estado1" value="TO"></select>
+      <select id="cidade1" value="Araguaína"></select>
+      <script language="JavaScript" type="text/javascript" charset="utf-8">
+        new dgCidadesEstados({
+          cidade: document.getElementById('cidade1'),
+          estado: document.getElementById('estado1')
+        })
+      </script>
+
+			</fieldset>
+
+			<input type="submit" name="submit" value="Enviar" class="btnSubimit" />
+	</form>
+</body>
+</html>
