@@ -1,53 +1,95 @@
 <!DOCTYPE html>
 <html>
-	
-	<head>
-		<meta charset="UTF-8">
-	  <title>Formulario de Inscrição</title>
-	  <link rel="stylesheet" type="text/css" href="style.css" />
-	  <script language="JavaScript" type="text/javascript" src="cidades-estados-utf8.js"></script>
-	</head>
 
-	<body>
-	  
-	
-	     <h1>Academia TOP LIFE</h1>
-	     	 <h2> 
-	   <ul>
-	      <li><a href="Instrutores.html">Instrutores</a></li>
-	      <li><a href="Clientes.html">Clientes</a></li>
-	         <li><a href="Treinos.html">Treinos</a></li>
-     	  <li><a href="Dietas.html">Dietas</a></li>
-	   </ul>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="logo.png" />
+        <title>Exemplo - Bootstrap</title>
+        <!-- Bootstrap css -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- jQuery -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Bootstrap js -->
+        <script src="js/bootstrap.min.js"></script>
+    </head>
 
-	 </h2>
-	 <br />
-	 <br />
-	 <br />
-	     <h2>Formulario de Inscrição</h2>
+    
+    <body style="background-color: #D6C6F4;">
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Academia TOP LIFE</a>
+                </div>
 
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="Instrutores.html">Instrutores</a></li>
+                        <li class="active"><a href="Clientes.html">Clientes</a></li>
+                        <li><a href="Treinos.html">Treinos</a></li>
+                        <li><a href="Dietas.html">Dietas</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
 
-	 <form action="" name="frmCadastro" method="post">
-			<fieldset>
-				<legend>Dados Pessoais</legend>
-				<label>Nome:<span>Somente 1º nome</span><input type="text" /></label>
-				<label>Sobrenome:<span>Sobrenome completo</span><input type="text" /></label>
-				<label>Bairro:<input type="text" /></label>
-				<label class="mInput">Rua:<span>Av, rua, lougradoro, etc.</span><input type="text" class="mInput" /></label>
-				<label>Complemento:<span>Casa, conjunto, bloco.</span><input type="text" /></label>
-				<label>Número:<input type="text" class="pInput" /></label>
-				<select id="estado1" value="TO"></select>
-      <select id="cidade1" value="Araguaína"></select>
-      <script language="JavaScript" type="text/javascript" charset="utf-8">
-        new dgCidadesEstados({
-          cidade: document.getElementById('cidade1'),
-          estado: document.getElementById('estado1')
-        })
-      </script>
+        <div style="text-align: center"><h2>Formulario de Inscrição</h2></div>
 
-			</fieldset>
+        <div class="col-md-11">
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label for="inputNome" class="col-sm-2 control-label">Nome</label>
+                <div class="col-sm-10">
+                    <input type="Nome" class="form-control" id="inputNome" placeholder="Nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputSobrenome" class="col-sm-2 control-label">Sobrenome</label>
+                <div class="col-sm-10">
+                    <input type="Sobrenome" class="form-control" id="inputSobrenome" placeholder="Sobrenome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEstado" class="col-sm-2 control-label">Estado</label>
+                <div class="col-sm-10">
+                    <input type="Estado" class="form-control" id="inputEstado" placeholder="Estado">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputCidade" class="col-sm-2 control-label">Cidade</label>
+                <div class="col-sm-10">
+                    <input type="Cidade" class="form-control" id="inputCidade" placeholder="Cidade">
+                </div>
+            </div>
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Remember me
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default">Enviar</button>
+                    </div>
+                </div>
+            </form>
 
-			<input type="submit" name="submit" value="Enviar" class="btnSubimit" />
-	</form>
-</body>
+    </body>
 </html>
